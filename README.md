@@ -1,4 +1,4 @@
-# ExerciciosAgUtfpr
+# exercicios_utfpr
 > Opa! Esse repositório é para salvar os meus exercicios de programação da UTFPR
 
 
