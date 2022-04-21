@@ -1,0 +1,21 @@
+Agenda (Turma, Aluno)
+    Eventos (Pessoal, Disciplina)
+Tables
+    Turma
+    Aluno(1, n) -> Turma(0,n)
+    Disciplina(1,1) -> Turma(0,n)
+    Professor(1,n) -> Disciplina(0,n)
+    Evento
+        Evento_Aluno(1,n) -> Aluno(0,n)
+        Evento_Turma
+            Evento_Turma(1,n) -> Turma(0,n)
+            Evento_Turma(1,n) -> Professor(0,n)
+    Atividade(0,n) -> Evento(0,n)
+    Grupo(0, n) -> Aluno(1,n)
+    Dashboard
+        Dashboard_Aluno(0,1) -> Aluno(1,n)
+        Dashboard_Grupo(0,1) -> Grupo(1,n)
+
+
+
+        
