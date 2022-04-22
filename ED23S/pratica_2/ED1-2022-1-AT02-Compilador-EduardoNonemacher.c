@@ -79,14 +79,18 @@ int main(int argc, char* argv[]) {
     PilhaDinamica pilha;
     iniciaPilhaDinamica(&pilha);
 
+    // variavel de controle dos temps 
     int tempCounter = 0;
 
+    // pega a linha da entrada e itera sobre seus caracteres
     char linha[100];
     fgets(linha, 100, entrada);
-
     for (int i = 0; i < strlen(linha); i++) {
         char ch = linha[i];
 
+        // caso seja um operando: salva na pilha;
+        // caso seja um operador: chama a logica para printar a operacao;
+        // else: printa erro
         if (ch >= 'A' && ch <= 'Z') {
             pushPilhaDinamica(&pilha, ch);
         }
@@ -95,30 +99,29 @@ int main(int argc, char* argv[]) {
             char number2 = popPilhaDinamica(&pilha);
 
             if (number1 && number2) {
+                // Printa a parte de leitura LDR. Validando se é TEMP ou não do number1
                 fprintf(saida, "LDR ");
                 printf("LDR ");
-                if (number1 >= 'A' && number1 <= 'Z') {
-                    fprintf(saida, "%c\n", number1);
-                    printf("%c\n", number1);
+                if (!(number1 >= 'A' && number1 <= 'Z')) {
+                    fprintf(saida, "TEMP");
+                    printf("TEMP");
                 }
-                else {
-                    fprintf(saida, "TEMP%c\n", number1);
-                    printf("TEMP%c\n", number1);
-                }
+                fprintf(saida, "%c\n", number1);
+                printf("%c\n", number1);
 
+                // Printa a parte de leitura LDR. Validando se é TEMP ou não do number2
                 fprintf(saida, "LDR ");
                 printf("LDR ");
-                if (number2 >= 'A' && number2 <= 'Z') {
-                    fprintf(saida, "%c\n", number2);
-                    printf("%c\n", number2);
+                if (!(number2 >= 'A' && number2 <= 'Z')) {
+                    fprintf(saida, "TEMP");
+                    printf("TEMP");
                 }
-                else {
-                    fprintf(saida, "TEMP%c\n", number2);
-                    printf("TEMP%c\n", number2);
-                }
+                fprintf(saida, "%c\n", number2);
+                printf("%c\n", number2);
 
                 tempCounter++;
 
+                // Swtich para printar operação
                 switch (ch) {
                 case '+':
                 fprintf(saida, "ADD ");
@@ -144,15 +147,15 @@ int main(int argc, char* argv[]) {
                     fprintf(saida, "TEMP");
                     printf("TEMP");
                 }
-                fprintf(saida, "%c", number1);
-                printf("%c", number1);
+                fprintf(saida, "%c ", number1);
+                printf("%c ", number1);
 
                 if (!(number2 >= 'A' && number2 <= 'Z')) {
-                    fprintf(saida, " TEMP");
-                    printf(" TEMP");
+                    fprintf(saida, "TEMP");
+                    printf("TEMP");
                 }
-                fprintf(saida, " %c\n", number2);
-                printf(" %c\n", number2);
+                fprintf(saida, "%c\n", number2);
+                printf("%c\n", number2);
 
                 if (i + 1 < strlen(linha)) {
                     pushPilhaDinamica(&pilha, tempCounter + '0');
