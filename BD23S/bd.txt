@@ -4,12 +4,22 @@ Agenda (Turma, Aluno)
     Eventos (Pessoal, Disciplina)
 Tables
     Turma
-    Aluno(1, n) -> Turma(0,n)
+    Aluno(1,n) -> Turma(0,n)
     Disciplina(1,1) -> Turma(0,n)
     Professor(1,n) -> Disciplina(0,n)
     Evento
-        Evento_Aluno(1,n) -> Aluno(0,n)
-        Evento_Turma
-            Evento_Turma(1,n) -> Turma(0,n)
-            Evento_Turma(1,n) -> Professor(0,n)
-    Atividade(0,n) -> Evento(0,n)
+        Evento_Aluno(0,n) -> Aluno(1,n)
+        Evento_Turma(0,n) -> Turma(1,n)
+        Evento_Grupo(0,n) -> Grupo(1,n)
+    Atividade
+        Atividade(0,n) -> Evento(0,n)
+        Atividade(0,n) -> Turma(1,n)
+        Atividade(0,n) -> Card(0,n)
+            Atividade_Grupo(0,n) -> Grupo(0,n)
+            Atividade_Aluno(0,n) -> Aluno(0,n)
+    Dashboard
+        Dashboard_Aluno(0,n) -> Aluno(1,1)
+        Dashboard_Grupo(0,n) -> Grupo(1,1)
+    Card
+        Card(0,n) -> Dashboard(1,1)
+
