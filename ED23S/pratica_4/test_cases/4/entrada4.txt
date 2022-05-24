@@ -9,4 +9,3 @@ Com a evoluçao computacional a inteligencia artificial ganhou mais força, tend
 O progresso na principal area dessa pesquisa, que e a de fazer uma inteligencia similar a do ser humano, e lento. Porem, os estudos nessa area tem surtido efeito em varias outras areas, como o planejamento automatizado e escalonamento, jogos, programas de diagnostico medico, controle autonomo, robotica e outras mais. 
 <page:5>
 Esse ramo de pesquisa e muito conflitante, pois existem os que apoiam as pesquisas e a ideia da maquina ter vida propria, como tambem existe o lado dos que não apoiam a ideia. Para muitos a existencia de maquinas com o poder de pensar, sentir e ate ter a capacidade de realizar atividades humanas e um fato inconcebivel.
-
