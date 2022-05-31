@@ -7,7 +7,6 @@ typedef struct NoArvore* PtrNoArvore;
 typedef struct NoArvore {
     char chave[32];
     int paginas[20];
-    // char* pages;
     PtrNoArvore direita;
     PtrNoArvore esquerda;
 } NoArvore;
@@ -26,7 +25,6 @@ bool inserirArvoreBinaria(PtrNoArvore* no, char* valor) {
         for (int i = 0; i < 20; i++) {
             (*no)->paginas[i] = -1;
         }
-        // (*no)->pages = "";
         (*no)->direita = NULL;
         (*no)->esquerda = NULL;
         return (true);
@@ -35,7 +33,7 @@ bool inserirArvoreBinaria(PtrNoArvore* no, char* valor) {
     int result = strcmp((*no)->chave, valor);
     if (result == 0)
         return (false);
-    if (result >= 1) {
+    if (result <= -1) {
         return (inserirArvoreBinaria(&(*no)->direita, valor));
     }
     else {
