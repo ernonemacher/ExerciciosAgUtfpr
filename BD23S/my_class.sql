@@ -634,5 +634,3 @@ SELECT iddashboard,
         from grupo g
         WHERE g.idgrupo = d.grupo_idgrupo) AS nome_grupo
 FROM dashboard d
-
-
