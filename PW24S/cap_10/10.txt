@@ -1,0 +1,5 @@
+Entregar a resposta dos dois exercícios da lista, identificadas com o seguinte padrão de nome:
+
+-capitulo10_exercicio1.html
+
+-capitulo10_exercicio2.html

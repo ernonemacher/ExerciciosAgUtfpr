@@ -1,0 +1,5 @@
+Entregar a resposta dos exercícios da lista, identificado com o seguinte padrão de nome:
+
+-capitulo14_exercicio1.txt
+
+-capitulo14_exercicio2.zip

@@ -1,0 +1,7 @@
+Entregar as respostas de pelo menos 4 das 8 atividades da lista, identificadas com o seguinte padrão de nome:
+
+-capitulo6_exercicioA.html
+
+.....
+
+-capitulo6_exercicioH.html

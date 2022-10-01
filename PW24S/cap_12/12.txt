@@ -1,0 +1,5 @@
+Entregar a resposta do exercícios 1 da lista, identificado com o seguinte padrão de nome:
+
+Para esse exercício você deve enviar um arquivo .rar (ou .zip), com imagens, um arquivo .html e um arquivo .css. O novo do arquivo .rar deve ser:
+
+-capitulo12_exercicio1.html

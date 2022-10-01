@@ -1,0 +1,7 @@
+Entregar pelo menos a respostas de pelo uma das três atividades da lista, identificadas com o seguinte padrão de nome:
+
+-capitulo9_exercicioA.html
+
+-capitulo9_exercicioB.html
+
+-capitulo9_exercicioC.html

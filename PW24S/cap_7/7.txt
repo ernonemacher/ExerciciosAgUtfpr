@@ -1,0 +1,5 @@
+Entregar pelo menos a respostas de pelo uma das duas atividades da lista, identificadas com o seguinte padrão de nome:
+
+-capitulo7_exercicioA.htm>
+
+-capitulo7_exercicioH.html
