@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Cap 20 exercicio 1</title>
+  </head>
+
+  <body>
+    <table border="1">
+      <tr>
+        <td>Linha 1, Coluna 1</td>
+        <td>Linha 1, Coluna 2</td>
+        <td>Linha 1, Coluna 3</td>
+      </tr>
+
+      <tr>
+        <td>Linha 2, Coluna 1</td>
+        <td>Linha 2, Coluna 2</td>
+        <td>Linha 2, Coluna 3</td>
+      </tr>
+
+      <tr>
+        <td>Linha 3, Coluna 1</td>
+        <td>Linha 3, Coluna 2</td>
+        <td>Linha 3, Coluna 3</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<script>
+  var tr = document.querySelectorAll('tr');
+  var tds = document.querySelectorAll('tr td');
+
+  for (var i = 0, j = 2; i < tr.length; i++, j += 3) {
+    tr[i].removeChild(tds[j]);
+  }
+
+  var tr = document.createElement('tr');
+  var td = [document.createElement('td'), document.createElement('td')];
+  td[0].innerHTML = 'Linha 4, Coluna 1';
+  td[1].innerHTML = 'Linha 4, Coluna 2';
+
+  var table = document.querySelector('table');
+
+  table.appendChild(tr);
+  tr.appendChild(td[0]);
+  tr.appendChild(td[1]);
+</script>

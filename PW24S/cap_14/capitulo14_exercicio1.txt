@@ -1,0 +1,5 @@
+1. O que acontece quando o número de linhas definidas no atributo grid-template-rows
+é menor que o número de linhas necessárias para exibir todas as linhas da página?
+
+As linhas serão atribuidas com o parâmetro 'auto' completando automaticamento 
+os campos que não forem definidos.

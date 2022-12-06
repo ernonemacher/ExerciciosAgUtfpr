@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cap 21 exercicio 1</title>
+  </head>
+  <body style="text-align: center">
+    <button onclick="aumentar()">
+      <b>Aumentar</b>
+    </button>
+
+    <button onclick="diminuir()">
+      <b>Diminuir</b>
+    </button>
+
+    <button onclick="original()">
+      <b>Retornar ao tamanho original</b>
+    </button>
+
+    <div class="box">
+      <img src="utfpr.png" id="img" GFG="250" style="width: 200px" />
+    </div>
+
+    <script>
+      const defaultSize = document.getElementById('img').clientWidth;
+      console.log(defaultSize);
+      function aumentar() {
+        var img = document.getElementById('img');
+        img.style.width = img.clientWidth + 10 + 'px';
+      }
+
+      function diminuir() {
+        var img = document.getElementById('img');
+        img.style.width = img.clientWidth - 10 + 'px';
+      }
+
+      function original() {
+        var img = document.getElementById('img');
+        img.style.width = defaultSize + 'px';
+      }
+    </script>
+  </body>
+</html>

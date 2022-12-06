@@ -1,0 +1,3 @@
+Entregar a resposta do exercício da lista, identificado com o seguinte padrão de nome:
+
+-capitulo21_exercicio1.zip
